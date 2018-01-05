@@ -1,0 +1,17 @@
+{
+  "name": "wearejh/m2-core-bug-sales-rule-upgrade",
+  "description": "This module was created to fix an issue where Magento would throw an error while upgrading the data of the Magento_SalesRule Module in Magento 2.2.",
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Jh\\CoreBugSalesRuleUpgrade\\": ""
+    }
+  }
+}
