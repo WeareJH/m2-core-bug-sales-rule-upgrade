@@ -9,13 +9,13 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0-0-0-0' 
 ```
 while upgrading the data of the Magento_SalesRule Module in Magento 2.2.
 
-####How it works:
+#### How it works:
 
 - Applies Magento patch to wrap `$connection->insertMultiple($this->getTable('salesrule_product_attribute'), $data);` in a conditional to ensure `$data` is not null/empty.
 
-####Installation
-Via Composer
+#### Installation
 
+Via Composer
 ```
 composer require wearejh/m2-core-bug-sales-rule-upgrade
 ```
